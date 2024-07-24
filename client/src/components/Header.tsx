@@ -18,9 +18,9 @@ import CategoryIcon from '@mui/icons-material/Category';
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
   borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.black, 0.15),
+  backgroundColor: alpha(theme.palette.common.white, 0.15),
   "&:hover": {
-    backgroundColor: alpha(theme.palette.common.black, 0.25),
+    backgroundColor: alpha(theme.palette.common.white, 0.25),
   },
   marginRight: theme.spacing(2),
   marginLeft: theme.spacing(1),
@@ -35,6 +35,7 @@ const SearchIconWrapper = styled("div")(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
+  color: "white",
 }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
@@ -53,7 +54,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 const LinkTypography = styled(Typography)(({ theme }) => ({
   marginLeft: theme.spacing(2),
   marginRight: theme.spacing(2),
-  color: "black",
+  color: "white",
   display: "flex",
   alignItems: "center",
 }));
@@ -67,7 +68,7 @@ function Header() {
     <AppBar position="static" style={{ backgroundColor: '#1976D2' }}>
       <Toolbar>
         <IconButton edge="start" color="inherit" aria-label="menu">
-          <AccountBoxIcon style={{ color: "black" }} />
+          <AccountBoxIcon style={{ color: "white" }} />
         </IconButton>
         <LinkTypography variant="h6">
           <Link to="/admin" style={{ color: "inherit", textDecoration: "none" }}>
@@ -76,7 +77,7 @@ function Header() {
         </LinkTypography>
         <LinkTypography variant="h6">
           <IconButton edge="start" color="inherit" aria-label="menu">
-            <HomeIcon style={{ color: "black" }} />
+            <HomeIcon style={{ color: "white" }} />
           </IconButton>
           <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
             TRANG CHỦ
@@ -84,7 +85,7 @@ function Header() {
         </LinkTypography>
         <LinkTypography variant="h6">
           <IconButton edge="start" color="inherit" aria-label="menu">
-            <CategoryIcon style={{ color: "black" }} />
+            <CategoryIcon style={{ color: "white" }} />
           </IconButton>
           <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
             DANH MỤC
@@ -92,7 +93,7 @@ function Header() {
         </LinkTypography>
         <LinkTypography variant="h6">
           <IconButton edge="start" color="inherit" aria-label="menu">
-            <LocalGroceryStoreIcon style={{ color: "black" }} />
+            <LocalGroceryStoreIcon style={{ color: "white" }} />
           </IconButton>
           <Link to="#" style={{ color: "inherit", textDecoration: "none" }}>
             SHOP
@@ -100,7 +101,7 @@ function Header() {
         </LinkTypography>
         <LinkTypography variant="h6">
           <IconButton edge="start" color="inherit" aria-label="menu">
-            <BookIcon style={{ color: "black" }} />
+            <BookIcon style={{ color: "white" }} />
           </IconButton>
           <Link to="#" style={{ color: "inherit", textDecoration: "none" }}>
             BÀI VIẾT
@@ -108,7 +109,7 @@ function Header() {
         </LinkTypography>
         <LinkTypography variant="h6">
           <IconButton edge="start" color="inherit" aria-label="menu">
-            <CallEndIcon style={{ color: "black" }} />
+            <CallEndIcon style={{ color: "white" }} />
           </IconButton>
           <Link to="/" style={{ color: "inherit", textDecoration: "none" }}>
             LIÊN HỆ
@@ -126,12 +127,12 @@ function Header() {
         </Search>
         <IconButton color="inherit">
           <Link to="/login" style={{ color: "inherit", textDecoration: "none" }}>
-            <AccountCircleIcon style={{ color: "black" }} />
+            <AccountCircleIcon style={{ color: "white" }} />
           </Link>
         </IconButton>
         <IconButton color="inherit">
           <Link to="/cart" style={{ color: "inherit", textDecoration: "none" }}>
-            <ShoppingCartIcon style={{ color: "black" }} />
+            <ShoppingCartIcon style={{ color: "white" }} />
           </Link>
         </IconButton>
       </Toolbar>

@@ -62,7 +62,7 @@ function AdminProductList() {
         open: true,
         message: "Xóa sản phẩm thành công.",
         onClose: () => setShowFlash(false),
-      });
+      }); 
       getAllProducts();
     } catch (error) {
       console.log(error);

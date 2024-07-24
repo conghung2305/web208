@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Carousel from 'react-material-ui-carousel';
 import { Paper, Box } from '@mui/material';
 import { styled } from '@mui/system';
@@ -7,17 +7,17 @@ const items = [
     {
         name: "Banner 1",
         description: "Nike Mecurial Superfly 10 Ellite",
-        image: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/190f32e9-691a-4ae3-a4ea-555353c3e5dd/mercurial-vapor-16-elite-blueprint-fg-low-top-football-boot-STcMzc.png"
+        image: "https://cdn.mediamart.vn/images/news/10-laptop-co-thiet-ke-dep-nhat-the-gioi-7s4bH1.jpg"
     },
     {
         name: "Banner 2",
         description: "This is the second banner",
-        image: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f02453d3-7589-4c91-b86c-6f2262153eac/mercurial-superfly-10-elite-blueprint-fg-high-top-football-boot-bw1xLJ.png"
+        image: "https://cdn.nguyenkimmall.com/images/companies/_1/dell-vostro-5568-thiet-ke-dep.jpg"
     },
     {
         name: "Banner 3",
         description: "This is the third banner",
-        image: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/63f9f004-cfe8-4beb-95d8-7c2d3bc167d5/alphafly-3-blueprint-road-racing-shoes-n5fmNS.png"
+        image: "https://laptopdieplinh.com/uploads/hp-envy-13.jpg"
     }
 ];
 

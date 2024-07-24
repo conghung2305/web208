@@ -6,6 +6,7 @@ import ProductForm from "src/components/ProductForm";
 import { useLoading } from "src/contexts/loading";
 import { ProductFormParams } from "src/types/Product";
 
+
 function AdminProductAdd() {
   const nav = useNavigate();
   const { setLoading } = useLoading();
@@ -14,6 +15,7 @@ function AdminProductAdd() {
 
   useEffect(() => {
     const fetchCategories = async () => {
+      
       try {
         setLoadingCategories(true);
         const response = await axios.get("http://localhost:3000/categories");
@@ -21,6 +23,7 @@ function AdminProductAdd() {
           value: category._id,
           label: category.name
         })));
+       
       } catch (error) {
         console.error("Error fetching categories:", error);
       } finally {
